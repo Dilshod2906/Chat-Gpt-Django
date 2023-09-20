@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Interface</title>
+    <!-- Add any CSS styles or links to external stylesheets here -->
+</head>
+<body>
+    <h1>CHAT GPT</h1>
+    <form action="" method="post">{% csrf_token %}
+        <input type="text" name="user_input" placeholder="Qiziqtirgan savolingiz...">
+        <button type="submit" class="btn btn-primary">Yuborish</button>
+    </form>
+    <div>
+        <p>
+            {{ result }}
+        </p>
+    </div>
+    
+    <!-- Add any JavaScript scripts here -->
+</body>
+</html>
+
